@@ -24,7 +24,7 @@ public class Oath2 {
   
   Faker faker = new Faker();
   int newUserID ; 
-  String token = "10960~GhI4Btq8HgxEUsgkVuTIDnNaOdXxZaBdu47cLZBNw4UkbZzGTRtKoVtkqPbT2DSF"; 
+  String token = ""; 
   
   
   @BeforeClass
@@ -44,7 +44,7 @@ public class Oath2 {
    // ValidatableResponse res = 
     		given()
       .accept(ContentType.JSON)
-      //.auth().oauth2("10960~GhI4Btq8HgxEUsgkVuTIDnNaOdXxZaBdu47cLZBNw4UkbZzGTRtKoVtkqPbT2DSF").
+      //.auth().oauth2("").
       .auth().oauth2(token).
 
     when()
